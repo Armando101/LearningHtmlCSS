@@ -54,6 +54,10 @@ header a:hover {
   color: var(--gray30);
 }
 
+pre {
+  background-color: #fec62e;
+}
+
 h1 {
   font-size: 60px;
 }
@@ -64,4 +68,14 @@ h2 {
 
 h3 {
   font-size: 1.5em;
+}
+
+.hero {
+  background-image: linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.3),
+      transparent 60%
+    ),
+    url("../../assets/images/pattern.png");
+  height: 350px;
 }
