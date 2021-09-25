@@ -57,6 +57,9 @@ header a:hover {
 
 pre {
   background-color: #fec62e;
+  padding: 40px;
+  line-height: 24px;
+  font-family: "Roboto";
 }
 
 h1 {
@@ -112,10 +115,11 @@ h3 {
 
 .section-content h3 {
   counter-increment: titleList;
+  padding-bottom: 4px;
 }
 
 .section-content h3::before {
-  content: counter(titleList, roman);
+  content: counter(titleList, decimal) ". ";
 }
 
 .section-content h3::after {
@@ -143,6 +147,17 @@ h3 {
 
 blockquote {
   margin: 32px 0 64px;
+  padding-left: 16px;
+  line-height: 32px;
+  font-family: "Roboto";
+}
+
+blockquote span {
+  color: var(--gray10);
+}
+
+blockquote span::before {
+  content: "-";
 }
 /* ::selection {
   background: magenta;
