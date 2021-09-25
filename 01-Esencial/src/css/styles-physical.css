@@ -34,6 +34,7 @@
 body {
   font-family: charter;
   color: var(--gray30);
+  margin: 0;
 }
 
 a {
@@ -60,14 +61,31 @@ pre {
 
 h1 {
   font-size: 60px;
+  margin-top: 64px;
+  margin-bottom: 16px;
+}
+
+h1 + p {
+  margin-top: 16px;
+  margin-bottom: 64px;
+}
+
+hr {
+  border-color: var(--gray10);
+  margin: 64px 0;
 }
 
 h2 {
   font-size: 2em;
+  margin: 54px 0 40px;
+  font-weight: normal;
 }
 
 h3 {
   font-size: 1.5em;
+  margin-top: 16px;
+  margin-top: 24px;
+  font-weight: normal;
 }
 
 .hero {
@@ -78,6 +96,14 @@ h3 {
     ),
     url("../../assets/images/pattern.png");
   height: 350px;
+}
+
+.section-content {
+  margin-top: 164px;
+}
+
+.section-content:first-of-type {
+  margin: 0;
 }
 
 .section-content {
@@ -99,7 +125,25 @@ h3 {
   background: var(--gray30);
   display: inline-block;
 }
+.section-content img {
+  margin-top: 40px;
+}
 
+.section-content + hr {
+  display: none;
+}
+
+.section-content ul li {
+  margin-bottom: 16px;
+}
+
+.section-content ol li {
+  line-height: 24px;
+}
+
+blockquote {
+  margin: 32px 0 64px;
+}
 /* ::selection {
   background: magenta;
 } */
