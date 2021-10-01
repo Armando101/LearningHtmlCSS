@@ -55,6 +55,16 @@ header a:hover {
   color: var(--gray30);
 }
 
+.wrapper {
+  width: 902px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.content {
+  padding: 20px;
+}
+
 pre {
   background-color: #fec62e;
   padding: 40px;
