@@ -31,6 +31,11 @@
   --gray20: #212429;
   --gray10: #616161;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: charter;
   color: var(--gray30);
@@ -44,6 +49,10 @@ a {
 header {
   font-size: 14px;
   color: var(--gray10);
+  position: absolute;
+  width: 188px;
+  left: -232px;
+  top: 64px;
 }
 
 header a {
@@ -55,6 +64,16 @@ header a:hover {
   color: var(--gray30);
 }
 
+header li {
+  margin-bottom: 16px;
+  line-height: 24px;
+}
+
+header details summary {
+  font-weight: bold;
+  line-height: 24px;
+}
+
 .wrapper {
   width: 902px;
   margin: 0 auto;
@@ -62,7 +81,6 @@ header a:hover {
 }
 
 .content {
-  padding: 20px;
 }
 
 pre {
@@ -76,6 +94,7 @@ h1 {
   font-size: 60px;
   margin-top: 64px;
   margin-bottom: 16px;
+  font-weight: normal;
 }
 
 h1 + p {
@@ -95,7 +114,6 @@ h2 {
 }
 
 h3 {
-  position: sticky;
   top: 0;
   background-color: white;
   font-size: 1.5em;
@@ -113,6 +131,18 @@ h3 {
   height: 350px;
 }
 
+.header {
+  position: sticky;
+  top: 0;
+}
+
+.header-content {
+  position: relative;
+}
+
+.main {
+}
+
 .section-content {
   margin-top: 164px;
 }
@@ -127,7 +157,7 @@ h3 {
 
 .section-content h3 {
   counter-increment: titleList;
-  padding-bottom: 4px;
+  padding-bottom: 8px;
 }
 
 .section-content h3::before {
