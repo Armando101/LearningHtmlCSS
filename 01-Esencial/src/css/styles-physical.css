@@ -95,9 +95,11 @@ h2 {
 }
 
 h3 {
+  position: sticky;
+  top: 0;
+  background-color: white;
   font-size: 1.5em;
   margin-top: 16px;
-  margin-top: 24px;
   font-weight: normal;
 }
 
@@ -138,6 +140,9 @@ h3 {
   height: 4px;
   background: var(--gray30);
   display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 .section-content img {
   margin-top: 40px;
