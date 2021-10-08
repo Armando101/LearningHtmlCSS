@@ -90,6 +90,25 @@ h3 {
   height: 350px;
 }
 
+.main hr {
+  display: none;
+}
+
+.main {
+}
+
+.wrapper {
+  max-inline-size: 902px; /* En lugar de width utilizamos este atributo para valores lógicos */
+  margin: auto;
+
+  /* Para dar valor de alto a elementos de bloque usamos block-size
+  block-size: 100px;
+  overflow: auto; */
+}
+
+.main .content {
+}
+
 .section-content {
   counter-reset: titleList;
 }
@@ -108,6 +127,10 @@ h3 {
   height: 4px;
   background: var(--white30);
   display: inline-block;
+}
+
+.section-content img {
+  max-inline-size: 100%;
 }
 
 /* ::selection {
