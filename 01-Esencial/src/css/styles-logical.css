@@ -152,7 +152,7 @@ h3 {
 }
 
 .section-content h3::before {
-  content: counter(titleList, roman);
+  content: counter(titleList, decimal) ". ";
 }
 
 .section-content img {
@@ -177,6 +177,34 @@ blockquote {
 
 blockquote p {
   color: var(--white30);
+}
+
+.slider-container {
+  display: block;
+  overflow: auto;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+}
+
+.slider-slide .video {
+  margin: 0;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+
+.slider-bullet {
+  display: inline-block;
+  inline-size: 15px;
+  block-size: 15px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.slider-bullet-list {
+  text-align: center;
 }
 
 /* ::selection {
