@@ -42,13 +42,38 @@ a {
   color: var(--white30);
 }
 
+.header {
+  position: sticky;
+  inset-block-start: -45px;
+}
+
+.header-content {
+  position: relative;
+  inset-block-start: 65px;
+}
+
 header {
   font-size: 14px;
   color: var(--white30);
+  position: absolute;
+  /* top */
+  inset-block-start: 0;
+
+  /* botton */
+  /* inset-block-end: 0; */
+
+  /* left */
+  inset-inline-start: -208px;
+
+  /* right */
+  /* inset-inline-end: 0; */
+
+  inline-size: 188px;
 }
 
 header li {
   color: var(--white20);
+  margin-block-end: 16px;
 }
 
 header a {
