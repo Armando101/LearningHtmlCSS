@@ -80,9 +80,6 @@ header details summary {
   background-color: white;
 }
 
-.content {
-}
-
 pre {
   background-color: #fec62e;
   padding: 40px;
@@ -138,9 +135,6 @@ h3 {
 
 .header-content {
   position: relative;
-}
-
-.main {
 }
 
 .section-content {
@@ -205,6 +199,7 @@ blockquote span {
 blockquote span::before {
   content: "-";
 }
+
 /* ::selection {
   background: magenta;
 } */

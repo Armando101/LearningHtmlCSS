@@ -42,33 +42,10 @@ a {
   color: var(--white30);
 }
 
-.header {
-  position: sticky;
-  inset-block-start: -45px;
-}
-
-.header-content {
-  position: relative;
-  inset-block-start: 65px;
-}
-
 header {
   font-size: 14px;
   color: var(--white30);
-  position: absolute;
-  /* top */
-  inset-block-start: 0;
-
-  /* botton */
-  /* inset-block-end: 0; */
-
-  /* left */
-  inset-inline-start: -208px;
-
-  /* right */
-  /* inset-inline-end: 0; */
-
-  inline-size: 188px;
+  margin-block-start: 20px;
 }
 
 header li {
@@ -83,6 +60,10 @@ header a {
 
 header a:hover {
   color: var(--white30);
+}
+
+.header-content {
+  padding-inline: 20px;
 }
 
 p {
@@ -106,7 +87,9 @@ h3 {
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 40px;
+  margin-block-start: 20px;
+  margin-block-end: 16px;
 }
 
 h2 {
@@ -119,14 +102,11 @@ h3 {
 
 .hero {
   background: linear-gradient(96.07deg, #314755 30.63%, #26a0da 102.18%);
-  height: 350px;
+  block-size: 50px;
 }
 
 .main hr {
   display: none;
-}
-
-.main {
 }
 
 .wrapper {
@@ -235,3 +215,31 @@ blockquote p {
 /* ::selection {
   background: magenta;
 } */
+
+@media screen and (min-width: 1366px) {
+  .hero {
+    block-size: 350px;
+  }
+
+  .header {
+    position: sticky;
+    inset-block-start: -45px;
+  }
+
+  .header-content {
+    position: relative;
+    inset-block-start: 65px;
+    padding-inline: 0;
+  }
+
+  header {
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: -208px;
+    inline-size: 188px;
+  }
+  h1 {
+    font-size: 60px;
+    margin-block-start: 64px;
+  }
+}
