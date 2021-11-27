@@ -1,0 +1,23 @@
+.flexOrder {
+  display: flex;
+  gap: 5rem;
+}
+
+.flexOrder img {
+  object-fit: contain;
+}
+
+/* .flexOrder:nth-child(even) p {
+  order: 1;
+}
+
+.flexOrder:nth-child(even) img {
+  order: 2;
+} */
+
+/* Mismo resultado con el código de arriba:
+*/
+
+.flexOrder:nth-child(even) p {
+  order: -1;
+}
