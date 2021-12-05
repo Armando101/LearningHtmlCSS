@@ -1,0 +1,12 @@
+.alignItems {
+  display: flex;
+  max-inline-size: 160px;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid red;
+}
+
+.alignItems img:nth-child(odd) {
+  align-self: flex-end;
+  border: 1px solid blue;
+}

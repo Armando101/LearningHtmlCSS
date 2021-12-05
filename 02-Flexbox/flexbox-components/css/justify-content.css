@@ -1,0 +1,31 @@
+.justifyContent {
+  display: flex;
+  justify-content: space-between; /* crea espacios entre los elementos */
+  justify-content: space-around; /* crea espacios entre los elementos y a los costados*/
+  justify-content: space-evenly; /* crea espacios entre los elementos y a los costados*/
+  justify-content: flex-end; /* alineado al final */
+  align-items: flex-start; /* alineado al inicio */
+  flex-direction: column; /* alineado vertical */
+  flex-wrap: wrap;
+  border: 1px solid red;
+  gap: 2rem; /* crea espacios entre los elementos */
+}
+
+.spaceBetween {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.spaceBetween ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  align-items: center;
+}
+
+.spaceBetween img {
+  height: 100px;
+  border-radius: 50%;
+}
