@@ -8,15 +8,88 @@
     <title>Spotifu</title>
   </head>
   <body class="body">
-    <button class="buttonIcon is-white" aria-label="play" title="Play">
-      <i class="icon-play" aria-hidden="true"></i>
-    </button>
-    <button class="buttonIcon is-primary" aria-label="play" title="Play">
-      <i class="icon-play" aria-hidden="true"></i>
-    </button>
+    <header class="logo" role="banner">
+      <a href="#" aria-current="page">
+        <img
+          src="./images/logoSpotifu.svg"
+          width="112"
+          height="32"
+          alt="Logo Spotifu"
+          title="Spotifu"
+          class="logo-image"
+        />
+      </a>
+    </header>
 
-    <button class="buttonIcon" aria-label="play" title="Play">
-      <i class="icon-play" aria-hidden="true"></i>
-    </button>
+    <nav class="menu" aria-label="Principal">
+      <ul class="menu-list">
+        <li class="menuItem">
+          <a href="#" class="link">
+            <i class="icon-home" aria-hidden="true"></i>
+            <span>Inicio</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <nav class="list" aria-labelledby="library-navigation" role="navigation">
+      <h2 class="list-title" id="library-navigation">Tu biblioteca</h2>
+      <ul class="list-content">
+        <li class="list-item">
+          <a href="#" class="link">Creada para ti</a>
+        </li>
+        <li class="list-item">
+          <a href="#" class="link">Escuchado recientemente</a>
+        </li>
+        <li class="list-item">
+          <a href="#" class="link">Tus me gusta</a>
+        </li>
+      </ul>
+    </nav>
+
+    <nav class="list" aria-labelledby="playlist-navigation" role="navigation">
+      <h2 class="list-title" id="playlist-navigation">Playlist</h2>
+      <ul class="list-content">
+        <li class="list-item">
+          <a class="link" href="#">Lo mejor de lo mejor</a>
+        </li>
+        <li class="list-item">
+          <a class="link" href="#">Bailar como Peater Parker</a>
+        </li>
+        <li class="list-item">
+          <a class="link" href="#">Para cantar en la ducha</a>
+        </li>
+        <li class="list-item">
+          <a class="link" href="#">Sin parar</a>
+        </li>
+        <li class="list-item">
+          <a class="link" href="#">Openings</a>
+        </li>
+        <li class="list-item">
+          <a class="link" href="#">Hello world</a>
+        </li>
+        <li class="list-item">
+          <a class="link" href="#">This is puro perreketengue</a>
+        </li>
+        <li class="list-item">
+          <a class="link" href="#">Más populares de la semana</a>
+        </li>
+        <li class="list-item">
+          <a class="link" href="#">Mis pistas de shazam</a>
+        </li>
+        <li class="list-item">
+          <a class="link" href="#">Audio Library</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="">
+      <button class="buttonIcon is-white" aria-label="play" title="Play">
+        <i class="icon-play" aria-hidden="true"></i>
+      </button>
+      <button class="buttonIcon is-primary" aria-label="play" title="Play">
+        <i class="icon-play" aria-hidden="true"></i>
+      </button>
+    </div>
   </body>
 </html>
