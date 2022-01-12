@@ -1,0 +1,8 @@
+.player-control {
+  border: none;
+  background: none;
+  color: var(--gray10);
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
