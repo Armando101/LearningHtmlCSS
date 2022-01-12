@@ -20,6 +20,44 @@
     <meta name="theme-color" content="#ffffff" />
   </head>
   <body class="body">
+    <div class="nowPlaying">
+      <div class="nowPlaying-cover">
+        <img
+          src="./images/MiniCover.png"
+          alt="Portada de Grand Escape"
+          width="56"
+          height="56"
+          title="Grand Escape"
+        />
+      </div>
+
+      <div class="nowPlaying-details">
+        <div class="nowPlaying-description">
+          <a href="#song" class="nowPlaying-title"
+            >Grand Escape (feat. Tokio Miura)</a
+          >
+          <a href="#RADWIMPS" class="nowPlaying-artist"
+            >RADWIMPS, Tokio Miura</a
+          >
+        </div>
+        <div class="nowPlaying-actions">
+          <button
+            class="player-control"
+            aria-label="Guardar en tu biblioteca"
+            role="switch"
+            title="Guardar en tu biblioteca"
+          >
+            <i
+              class="icon-heart"
+              role="presentation"
+              aria-label="Volumen alto"
+              aria-hidden="true"
+            ></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
     <div class="playerControls">
       <div
         class="playerControls-buttons"
@@ -70,6 +108,7 @@
           aria-label="Volumen alto"
         ></i>
       </button>
+
       <div class="playerVolume-slider">
         <div class="playerPlayback">
           <div class="playerPlayback-slider">
