@@ -1,0 +1,26 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 600px 200px;
+}
+
+.item {
+  border: 5px solid red;
+  counter-increment: item;
+}
+
+.item::before {
+  content: counter(item);
+}
+
+.item:nth-of-type(2) {
+  border-color: blue;
+}
+
+.item:nth-of-type(3) {
+  border-color: green;
+}
+
+.item:nth-of-type(4) {
+  border-color: yellowgreen;
+}
