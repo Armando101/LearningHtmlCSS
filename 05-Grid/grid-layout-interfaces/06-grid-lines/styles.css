@@ -1,0 +1,26 @@
+.container {
+  display: grid;
+  grid-template-columns: [inline-start] 200px 200px 200px 200px 200px [inline-end];
+  grid-template-rows: 200px 100px;
+}
+.item {
+  border: 5px solid red;
+  counter-increment: item;
+}
+
+.item::before {
+  content: counter(item);
+}
+
+.item:nth-of-type(4) {
+  border-color: blue;
+  /* grid-column: 1/1; */
+  grid-column-start: 1;
+  grid-column-start: inline-start;
+  grid-column-end: 4;
+  grid-column-end: inline-end;
+  grid-column-end: -1;
+
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
