@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  background-color: #78bbcb;
+  display: flex;
+  justify-content: center;
+  block-size: 99vh;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 100px);
+  grid-template-rows: repeat(6, 100px);
+  border: 10px solid black;
+}
+
+.grid img {
+  max-inline-size: 100%;
+  box-sizing: border-box;
+}
+
+.god {
+  grid-row-start: 2;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-column: 3 / 5;
+}
+
+.mouth {
+  grid-column-start: 5;
+  grid-row-start: 4;
+}
+
+.bell {
+  grid-row-start: 4;
+}
+
+.clock {
+  grid-row-start: 4;
+  grid-column-start: 2;
+}
+
+.worn {
+  grid-row-start: 2;
+  grid-column-start: 6;
+}
+
+.toaster {
+  grid-column-start: 1;
+  grid-row-start: 2;
+}
