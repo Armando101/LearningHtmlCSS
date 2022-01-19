@@ -7,28 +7,21 @@
 
 .layout {
   min-inline-size: var(--minInlineSize);
+  block-size: 98vh;
+  display: grid;
+  grid-template-areas: "sidebar page" "footer footer";
+  grid-template-columns: var(--sidebarInlineSize) 1fr;
+  grid-template-rows: 1fr var(--bottomSize);
 }
 
-.layout-block {
-  display: flex;
+.layout .sidebar {
+  grid-area: sidebar;
 }
 
-.layout-sidebar {
-  inline-size: var(--sidebarInlineSize);
-  min-block-size: var(--minBlockSize);
-  block-size: calc(100vh - var(--bottomSize));
-  overflow: auto;
-  flex-shrink: 0;
-  background-color: var(--gray60);
+.layout .page {
+  grid-area: page;
 }
 
-.layout-main {
-  block-size: calc(100vh - var(--bottomSize));
-  min-block-size: var(--minBlockSize);
-  overflow: auto;
-}
-
-.layout-bottom {
-  flex: 1;
-  block-size: var(--bottomSize);
+.layout footer {
+  grid-area: footer;
 }

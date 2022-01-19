@@ -7,6 +7,7 @@
 .page {
   padding-inline: 2em;
   padding-block-end: 2em;
+  overflow: auto;
 }
 
 .page-block {
