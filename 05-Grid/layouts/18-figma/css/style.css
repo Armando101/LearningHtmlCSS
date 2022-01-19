@@ -1,0 +1,32 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input[id="list"]:checked ~ .project-list {
+  border: 1px solid red;
+}
+
+input[id="grid"]:checked ~ .project-list {
+  border: 1px solid blue;
+}
+
+input[id="list"]:checked ~ .project-actions [for="list"],
+input[id="grid"]:checked ~ .project-actions [for="grid"] {
+  background-color: red;
+}
+
+label {
+  border: 1px solid red;
+  cursor: pointer;
+  user-select: none;
+  padding: 1rem;
+}
+
+input {
+  display: none;
+}
+
+.project-actions {
+  display: flex;
+  justify-content: flex-end;
+}
