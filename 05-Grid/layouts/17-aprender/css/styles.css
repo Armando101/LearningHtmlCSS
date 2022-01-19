@@ -1,0 +1,40 @@
+.lesson {
+  font-family: Arial, Helvetica, sans-serif;
+  border: 5px solid red;
+
+  display: grid;
+  grid-template-columns: 8.75rem 1fr;
+  grid-template-areas: "thumb title" "description description";
+}
+
+.lesson-thumb {
+  border: 5px solid black;
+  grid-area: thumb;
+}
+
+.lesson-thumb img {
+  inline-size: 100%;
+  vertical-align: middle;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.lesson-title {
+  border: 5px solid orange;
+  grid-area: title;
+  margin: 0;
+}
+
+.lesson-description {
+  border: 5px solid green;
+  grid-area: description;
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .lesson {
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: "thumb title" "thumb description";
+  }
+}
